@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        /* 通过css创建的标签叫伪元素，用于一些装饰性的内容 */
+        .sky::before {
+            content: '今天的';
+            background-color: violet;
+        }
+
+        .sky::after{
+            content: ',像一首淡淡的诗歌';
+            background-color: yellowgreen;
+        }
+
+        .sky{
+            background-color: tomato;
+        }
+    </style>
+</head>
+<body>
+    <div class="sky">
+        天空是蓝色的
+    </div>
+</body>
+</html>

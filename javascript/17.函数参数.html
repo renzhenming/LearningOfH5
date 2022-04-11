@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+
+
+        // javascrip方法不需要指定返回值，也不需要指定行参类型
+        function show(me){
+            console.log("打印："+me)
+        }
+        show("whatever")
+        show(2)
+
+        //如果实参个数多余行参个数，则多余的不参与
+        show(1,2) 
+
+        function show2(num1,num2){
+            console.log(num1+num2)
+        }
+        //如果实参个数小于行参，则没有实参的行参默认取undefined
+        show2(1)
+
+        function getSum(name,gender){
+            return name+gender;
+        }
+
+        var sum = getSum(1,2)
+        console.log(sum)
+
+
+        function getSum2(name,gender){
+            return name,gender;//这样写也不会报错，但是只会返回最后一个,所以打印20
+        }
+        var s = getSum2(10,20)
+        console.log(s)
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

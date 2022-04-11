@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .box {
+            width: 2018px;
+            height: 868px;
+            margin: 0 auto;
+            background-color: sienna;
+            /* 超出父容器的隐藏 */
+            overflow: hidden;
+        }
+
+        .box::before,
+        .box::after {
+            float: left;
+            content: '';
+            width: 50%;
+            height: 868px;
+            background-image: url(./image/cars.png);
+            /* 控制动画速度 */
+            transition: 0.5s;
+        }
+
+        .box::after {
+            background-position: right 0px;
+        }
+
+        .box:hover::before {
+            transform: translateX(-100%);
+        }
+
+        .box:hover::after {
+            transform: translateX(100%);
+        }
+
+    </style>
+</head>
+<body>
+    <div class="box"></div>
+</body>
+</html>

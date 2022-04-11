@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+   
+    <style>
+
+        /* <!-- 并集选择器 --> */
+        h1,
+        span,
+        h2{
+            color: red;
+        }
+
+        /* 后代选择器，对div中的所有p标签生效 */
+        div p{
+            color:red;
+        }
+        /* 子选择器，对div中的子类p标签（第一层，嵌套不生效）生效 */
+        div>p{
+            color: seagreen;
+        }
+
+        /* 交集选择器，p标签并且对带着class=cat的标签生效 */
+        p.cat{
+            color: seagreen;
+        }
+
+        /* 伪类选择器，鼠标悬停的时候，显示的样式，任何标签都可以加 */
+        div:hover{
+            color: springgreen;
+            background-color: tomato;
+        }
+
+        a:hover{
+            color: yellow;
+            background-color: blue;
+        }
+    </style>
+
+
+</head>
+<body>
+
+    <div>
+        <p>我是标签  <a href="">内部超链接</a></p>
+
+        <a href="">超链接</a>
+    </div>
+
+    <h1>title</h1>
+    <span>what</span>
+    <div>哈哈哈</div>
+    <h2>title 2</h2>
+    <p class="cat">我是一个p标签</p>
+    <p>我是一个普通的p标签</p>
+    <div class="cat">我是一个div标签</div>
+
+    <ul>
+        <li>13</li>
+        <li>23</li>
+        <li>33</li>
+    </ul>
+</body>
+</html>

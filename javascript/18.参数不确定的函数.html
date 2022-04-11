@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        //不确定有多少参数传递的时候，可以用arguments获取，arguments是函数内置的一个对象，包含了所有实际传递的参数
+        //从这里可以看出javascript函数可以不定义行参，然后也可以随便传实参
+        function say(){
+            console.log(arguments)
+            for (let i = 0; i < arguments.length; i++) {
+                const element = arguments[i];
+                console.log(element)
+            }
+        }
+        say(1,2,3,4,5)
+
+        var funName = function(){
+            console.log('我是函数表达式，是另一种定义函数的方式')
+        }
+        funName()
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

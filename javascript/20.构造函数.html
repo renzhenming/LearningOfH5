@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script>
+
+        //构造函数首字母必须大写
+        function Worker( name, age, sex){
+            this.name = name;
+            this.age = age;
+            this.sex = sex;
+
+            //构造函数中还可以定义方法（可以把构造函数类比为java中的类？）
+            //注意定义的方式，需要用一个引用指向这个方法
+            this.builidHouse = function(color){
+                console.log('worker can build '+ color+' house')
+            }
+        }
+
+        //调用构造函数创建一个对象
+        var w1 = new Worker('章三',12,'女')
+        console.log(w1.name)
+        console.log(w1.age)
+        console.log(w1.sex)
+        w1.builidHouse('红色')
+
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

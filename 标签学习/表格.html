@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- 宽高推荐使用css实现 -->
+    <table border="1" width="200" height="100">
+        <caption><strong>2021级初中1班学生统计</strong></caption>
+        <thead>
+            <tr>
+                <th>姓名</th>
+                <th>年龄</th>
+                <th>爱好</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>小明</td>
+                <!-- 合并单元格 -->
+                <td rowspan="2">12</td>
+                <td>打球</td>
+            </tr>
+            <tr>
+                <td>小红</td>
+                <td>花花草草</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td>总结</td>
+                <td colspan="2">都很聪明</td>
+            </tr>
+        </tfoot>
+
+    </table>
+</body>
+</html>

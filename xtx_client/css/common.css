@@ -1,0 +1,243 @@
+.wrapper {
+    width: 1240px;
+    margin: 0 auto;
+}
+
+.shortcut {
+    height: 52px;
+    background-color: #333333;
+}
+
+.shortcut .wrapper {
+    height: 52px;
+}
+
+.shortcut .wrapper ul {
+    float: right;
+}
+
+.shortcut .wrapper ul li {
+    float: left;
+    line-height: 52px;
+}
+
+.shortcut .wrapper ul li a {
+    padding: 0 16px;
+    border-right: 1px solid #666;
+    font-size: 14px;
+    color: #dcdcdc;
+}
+
+.shortcut .wrapper ul li a span {
+    width: 11px;
+    height: 16px;
+    display: inline-block;
+    background-image: url(../images/sprites.png);
+    background-position: -160px -70px;
+    vertical-align: middle; 
+    margin-right: 8px;
+}
+
+.shortcut .wrapper ul li:last-child a {
+    border-right: 0px;
+}
+
+/* header */
+.header {
+    margin: 30px auto;
+    height: 70px;
+}
+
+.logo {
+    float: left;
+    width: 207px;
+    height: 70px;
+}
+
+/* 搜索引擎优化 */
+.logo h1 {
+    width: 207px;
+    height: 70px;
+}
+
+.logo h1 a {
+    display: block;
+    width: 207px;
+    height: 70px;
+    background-image: url(../images/logo.png);
+    background-size: contain;
+    /* 设置文字不显示，只为搜索引擎优化做的处理 */
+    font-size: 0px;
+}
+
+.nav {
+    margin-left: 40px;
+    float: left;
+    height: 70px;
+}
+
+.nav li {
+    float: left;
+    margin-right: 48px;
+    line-height: 70px;
+}
+
+.nav li a {
+    font-size: 16px;
+    color: #333333;
+   
+}
+
+.nav li a {
+    padding-bottom: 7px;
+}
+
+.nav li a:hover {
+    border-bottom: 1px solid #27ba9b;
+    color: #27ba9b;
+}
+
+.search {
+    position: relative;
+    float: left;
+    width: 172px;
+    margin-top: 24px;
+    height: 30px;
+    background-color: tomato;
+    margin-left: 34px;
+    border-bottom: 2px solid #e7e7e7;
+}
+
+.search input {
+    width: 172px;
+    height: 28px;
+    padding-left: 30px;
+}
+
+.search input::placeholder {
+    font-size: 14px;
+    color: #ccc;
+}
+
+.search span {
+    position: absolute;
+    left: 2px;
+    top: 2px;
+    width: 18px;
+    height: 18px;
+    background-image: url(../images/sprites.png);
+    background-position: -79px -69px;
+}
+
+.car {
+    position: relative;
+    margin-top: 28px;
+    float: left;
+    width: 23px;
+    height: 23px;
+    margin-left: 15px;
+    margin-right: 12px;
+    background-image: url(../images/sprites.png);
+    background-position: -119px -69px;
+}
+
+.car span {
+    position: absolute;
+    right: -12px;
+    top: -4px;
+    width: 20px;
+    height: 15px;
+    background-color: #e26237;
+	border-radius: 8px;
+    font-size: 13px;
+    color: white;
+    text-align: center;
+    line-height: 15px;
+}
+
+/* 版权区域 */
+.footer {
+    height: 342px;
+    background-color: #333;
+}
+
+.footer .wrapper {
+    width: 1393px;
+}
+
+.footer .top {
+    padding-top: 58px;
+    padding-left: 189px;
+    height: 172px;
+    border-bottom: 3px solid #434343;
+}
+
+.footer .top li {
+    position: relative;
+    float: left;
+    width: 195px;
+    height: 58px;
+    margin-right: 200px;
+    line-height: 58px;
+}
+
+.footer .top li:last-child {
+    margin-right: 0;
+}
+
+.footer .top li:first-child::before {
+    position: absolute;
+    left: 0;
+    top: 0;
+    content: '';
+    width: 58px;
+    height: 58px;
+    background-image: url(../images/sprites.png);
+    vertical-align: middle;
+}
+
+.footer .top li:nth-child(2n):before {
+    position: absolute;
+    left: 0;
+    top: 0;
+    content: '';
+    width: 58px;
+    height: 58px;
+    background-image: url(../images/sprites.png);
+    background-position: -65px 0;
+    vertical-align: middle;
+}
+
+.footer .top li:last-child:before {
+    position: absolute;
+    left: 0;
+    top: 0;
+    content: '';
+    width: 58px;
+    height: 58px;
+    background-image: url(../images/sprites.png);
+    background-position: -130px 0;
+    vertical-align: middle;
+}
+
+.footer .top li span {
+    padding-left: 77px;
+    font-size: 28px;
+    color: white;
+    text-align: center;
+}
+
+.footer .bottom {
+    padding-top: 30px;
+    color: white;
+    text-align: center;
+}
+
+.footer .bottom a {
+    color: white;
+    font-size: 14px;
+}
+
+.footer .bottom p {
+    margin-bottom: 30px;
+}

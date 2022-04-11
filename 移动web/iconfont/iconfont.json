@@ -1,0 +1,58 @@
+{
+  "id": "3168192",
+  "name": "testgdfg",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon-",
+  "description": "",
+  "glyphs": [
+    {
+      "icon_id": "27402081",
+      "name": "仓库",
+      "font_class": "cangku",
+      "unicode": "ee05",
+      "unicode_decimal": 60933
+    },
+    {
+      "icon_id": "27402082",
+      "name": "发布",
+      "font_class": "fabu",
+      "unicode": "ee06",
+      "unicode_decimal": 60934
+    },
+    {
+      "icon_id": "27402083",
+      "name": "监测",
+      "font_class": "jiance",
+      "unicode": "ee07",
+      "unicode_decimal": 60935
+    },
+    {
+      "icon_id": "27402084",
+      "name": "店铺",
+      "font_class": "dianpu",
+      "unicode": "ee08",
+      "unicode_decimal": 60936
+    },
+    {
+      "icon_id": "27402085",
+      "name": "入驻",
+      "font_class": "ruzhu",
+      "unicode": "ee09",
+      "unicode_decimal": 60937
+    },
+    {
+      "icon_id": "27402086",
+      "name": "标签",
+      "font_class": "biaoqian",
+      "unicode": "ee0a",
+      "unicode_decimal": 60938
+    },
+    {
+      "icon_id": "27402087",
+      "name": "编写",
+      "font_class": "bianxie",
+      "unicode": "ee0b",
+      "unicode_decimal": 60939
+    }
+  ]
+}
