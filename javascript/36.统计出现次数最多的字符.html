@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script>
+
+        var str = "fjsljfdsfjfklsdjfkldsjfkldjflkdsfjdsjfkds"
+        var obj = {}
+
+        for(var i = 0; i < str.length; i++){
+            var c = str.charAt(i);
+            if(obj[c]){
+                obj[c] = obj[c] + 1
+            }else{
+                obj[c] = 1;
+            }
+        }
+
+        console.log(obj)
+
+        var max = 0;
+        var c = '';
+        for(key in obj){
+            if(obj[key] > max){
+                max = obj[key]
+                c = key
+            }
+        }
+        console.log("出现次数最多的字符是"+c+"，出现的次数是"+max)
+
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

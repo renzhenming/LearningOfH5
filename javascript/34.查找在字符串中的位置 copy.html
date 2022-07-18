@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+
+    <script>
+
+        var str = "床前明月光"
+        var index = str.indexOf("光")
+        console.log(index)
+
+        var str2 = "abfdsjkfdsjfhjsdkhjwekwhewjewkjfnjwenkfwe"
+        //求j出现的次数
+
+        var nums = 0;
+        index = str2.indexOf('j')
+        while(index != -1){
+            nums++;
+            index = str2.indexOf('j',index+1)
+        }
+        console.log("j出现的次数 = "+nums)
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
